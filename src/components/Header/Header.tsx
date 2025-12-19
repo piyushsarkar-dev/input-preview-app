@@ -11,7 +11,7 @@ const Header = () => {
 					<h1
 						className="text-2xl font-semibold"
 						aria-label="App Name">
-						NSP App
+						Input Preview Demo
 					</h1>
 				</Link>
 

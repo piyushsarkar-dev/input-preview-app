@@ -1,3 +1,10 @@
+import DemoInput from "@/components/DemoInput";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/components/shadcnui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,10 +15,16 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<section className="grid h-[90dvh] place-items-center">
-			<div className="space-y-2 text-center">
-				<h1 className="text-5xl font-semibold">Nextjs Starter Frontend</h1>
-				<h2 className="text-3xl">Production grade Next.js starter template</h2>
-			</div>
+			<Card>
+				<CardHeader>
+					<CardTitle className="grid place-items-center text-2xl">
+						Demo Input V1.0
+					</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<DemoInput />
+				</CardContent>
+			</Card>
 		</section>
 	);
 };
